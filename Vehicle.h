@@ -9,8 +9,7 @@
 class Vehicle {
 private:
     // attributes of a vehicle
-    std::string Make;
-    std::string Model;
+    std::string Make, Model;
     int Year;
 public:
     //vehicle constructors
