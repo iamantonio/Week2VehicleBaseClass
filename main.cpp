@@ -16,10 +16,13 @@
 
 #include <iostream>
 #include "Vehicle.h"
+#include "Sports_Car.h"
 
 int main() {
     Vehicle car1("Honda","Pilot",2012);
     car1.display_vehicle_info();
-
+    std::cout << std::endl;
+    Sports_Car car2("Mazda", "Miata MX-5", 2022, 137, 6.5);
+    car2.display_vehicle_info();
     return 0;
 }

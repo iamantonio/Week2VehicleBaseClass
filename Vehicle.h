@@ -27,7 +27,8 @@ public:
     std::string get_make();
     std::string get_model();
     int get_year();
-    void display_vehicle_info();
+
+    virtual void display_vehicle_info();
 
 };
 
