@@ -15,7 +15,7 @@ private:
     double Zero_to_Sixty{};
 public:
     Sports_Car(std::string make, std::string model, int year, int top_speed, double zero_to_sixty)
-    : Vehicle(std::move(make), std::move(model), std::move(year)){
+    : Vehicle(std::move(make), std::move(model), year){
         set_top_speed(top_speed);
         set_zero_to_sixty(zero_to_sixty);
     }

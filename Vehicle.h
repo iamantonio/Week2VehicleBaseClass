@@ -5,18 +5,18 @@
 #ifndef WEEK2VEHICLEBASECLASS_VEHICLE_H
 #define WEEK2VEHICLEBASECLASS_VEHICLE_H
 #include <string>
+#include <utility>
 
 class Vehicle {
 private:
     // attributes of a vehicle
     std::string Make, Model;
-    int Year;
+    int Year{};
 public:
     //vehicle constructors
-    Vehicle();
     Vehicle(std::string make, std::string model, int year) {
-        set_make(make);
-        set_model(model);
+        set_make(std::move(make));
+        set_model(std::move(model));
         set_year(year);
     }
 

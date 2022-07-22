@@ -3,14 +3,15 @@
 //
 
 #include <iostream>
+#include <utility>
 #include "Vehicle.h"
 
 void Vehicle::set_make(std::string make) {
-    Make = make;
+    Make = std::move(make);
 }
 
 void Vehicle::set_model(std::string model) {
-    Model = model;
+    Model = std::move(model);
 }
 
 void Vehicle::set_year(int year) {
@@ -30,7 +31,7 @@ int Vehicle::get_year() {
 }
 
 void Vehicle::display_vehicle_info() {
-    std::cout << "Vehicle Year: \t" << Year << std::endl;
-    std::cout << "Vehicle Make: \t" << Make << std::endl;
-    std::cout << "Vehicle Model: \t" << Model << std::endl;
+    std::cout << "Vehicle Year: \t\t" << Year << std::endl;
+    std::cout << "Vehicle Make: \t\t" << Make << std::endl;
+    std::cout << "Vehicle Model: \t\t" << Model << std::endl;
 }
