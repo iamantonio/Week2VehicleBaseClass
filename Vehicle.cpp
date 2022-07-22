@@ -5,7 +5,7 @@
 #include <iostream>
 #include <utility>
 #include "Vehicle.h"
-
+// methods for the vehicle class setters and getters
 void Vehicle::set_make(std::string make) {
     Make = std::move(make);
 }
@@ -29,7 +29,7 @@ std::string Vehicle::get_model() {
 int Vehicle::get_year() {
     return Year;
 }
-
+// method to display the vehicle class info
 void Vehicle::display_vehicle_info() {
     std::cout << "Vehicle Year: \t\t" << Year << std::endl;
     std::cout << "Vehicle Make: \t\t" << Make << std::endl;
