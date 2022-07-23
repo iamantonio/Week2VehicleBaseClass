@@ -17,6 +17,7 @@
 #include <iostream>
 #include "Vehicle.h"
 #include "Sports_Car.h"
+#include "Truck.h"
 
 int main() {
     Vehicle car1("Honda","Pilot",2012);
@@ -24,5 +25,15 @@ int main() {
     std::cout << std::endl;
     Sports_Car car2("Mazda", "Miata MX-5", 2022, 137, 6.5);
     car2.display_vehicle_info();
+    std::cout << std::endl;
+    Truck car3("", "F-150",2022, 52.8,  2238);
+    car3.display_vehicle_info();
+    std::cout << "\n";
+    std::cout << "Getting car3 model...." << car3.get_model();
+    std::cout << "\nGetting car2 model...." << car2.get_model();
+    std::cout << "\nGetting car1 model...." << car1.get_model();
+    std::cout << "\nChanging car2 model to...Acura ";
+    car2.set_model("Acura");
+    std::cout << "\nCar2 model is now: " << car2.get_model();
     return 0;
 }

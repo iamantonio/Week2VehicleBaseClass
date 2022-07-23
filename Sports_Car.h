@@ -10,7 +10,7 @@
 #include <utility>
 
 // creating the sports car class and inheriting attributes from the vehicle class.
-class Sports_Car : Vehicle {
+class Sports_Car : virtual public Vehicle{
 private:
     int Top_Speed{};
     double Zero_to_Sixty{};

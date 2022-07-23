@@ -12,6 +12,9 @@ private:
     // attributes of a vehicle
     std::string Make, Model;
     int Year{};
+protected:
+    Vehicle(std::remove_reference<struct std::basic_string<char> &>::type type);
+
 public:
     //vehicle constructor
     Vehicle(std::string make, std::string model, int year) {
@@ -29,6 +32,7 @@ public:
     // method to display the vehicle class info
     virtual void display_vehicle_info();
 
+    //std::string get_model();
 };
 
 

@@ -7,11 +7,11 @@
 #include "Vehicle.h"
 // methods for the vehicle class setters and getters
 void Vehicle::set_make(std::string make) {
-    Make = std::move(make);
+    Make = make;
 }
 
 void Vehicle::set_model(std::string model) {
-    Model = std::move(model);
+    Model = model;
 }
 
 void Vehicle::set_year(int year) {
@@ -35,3 +35,8 @@ void Vehicle::display_vehicle_info() {
     std::cout << "Vehicle Make: \t\t" << Make << std::endl;
     std::cout << "Vehicle Model: \t\t" << Model << std::endl;
 }
+
+Vehicle::Vehicle(std::remove_reference<struct std::basic_string<char> &>::type type) {
+
+}
+
