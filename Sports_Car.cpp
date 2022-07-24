@@ -1,6 +1,6 @@
 //
 // Created by Tony on 7/22/2022.
-//
+// Methods for the Sports_Car class stored in this file.
 
 #include "Sports_Car.h"
 #include <iostream>

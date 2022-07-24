@@ -1,5 +1,6 @@
 //
 // Created by Tony on 7/22/2022.
+// Methods for the Truck class stored in this file.
 //
 
 #include "Truck.h"

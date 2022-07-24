@@ -1,5 +1,7 @@
 //
 // Created by Tony on 7/21/2022.
+// Base class header file created to creat the Vehicle class that will act as the base
+// for derived classes.
 //
 
 #ifndef WEEK2VEHICLEBASECLASS_VEHICLE_H
@@ -7,6 +9,7 @@
 #include <string>
 #include <utility>
 
+// created the class Vehicle
 class Vehicle {
 private:
     // attributes of a vehicle

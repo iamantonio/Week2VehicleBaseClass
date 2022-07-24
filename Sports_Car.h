@@ -1,5 +1,6 @@
 //
 // Created by Tony on 7/22/2022.
+// Derived class of the Vehicle base class called Sports_Car
 //
 
 #ifndef WEEK2VEHICLEBASECLASS_SPORTS_CAR_H
@@ -9,7 +10,7 @@
 #include <string>
 #include <utility>
 
-// creating the sports car class and inheriting attributes from the vehicle class.
+// creating the sports car class and inheriting attributes from the vehicle class while adding top speed and zero to sixty.
 class Sports_Car : virtual public Vehicle{
 private:
     int Top_Speed{};
