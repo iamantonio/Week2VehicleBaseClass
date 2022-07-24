@@ -20,14 +20,19 @@
 #include "Truck.h"
 
 int main() {
+    Vehicle* ptr;
+    Sports_Car* ptr2;
     // created car1 from base class
     std::cout << "Base Class Vehicle\n";
     Vehicle car1("Honda","Pilot",2012);
-    car1.display_vehicle_info(); // display info function from base class
+    ptr = &car1; // pointer for car1 object
+    ptr->display_vehicle_info(); // display info function from base class
     std::cout << std::endl;
     std::cout << "Sports Car 1\n";
     Sports_Car sports_car1("Mazda", "Miata MX-5", 2022, 137, 6.5); // created sports_car1 from vehicle base class
-    sports_car1.display_vehicle_info(); // override base class display info method using the method in Sports_Car class
+    ptr2 = &sports_car1;
+    std::cout << "Referencing ptr2: " << ptr2 << std::endl;
+    ptr2->display_vehicle_info(); // override base class display info method using the method in Sports_Car class
     std::cout << std::endl;
     std::cout << "Sports Car 2 Using setters\n";
     Sports_Car sports_car2("Ford", "Mustang", 2012,200,5); // setting up sport_car2 object.

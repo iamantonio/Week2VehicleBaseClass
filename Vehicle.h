@@ -13,14 +13,14 @@ private:
     std::string Make, Model;
     int Year{};
 protected:
-    Vehicle(std::remove_reference<struct std::basic_string<char> &>::type type);
+    __attribute__((unused)) Vehicle(const std::remove_reference<struct std::basic_string<char> &>::type& type);
 
 public:
     //vehicle constructor
     Vehicle(std::string make, std::string model, int year) {
         set_make(std::move(make));
         set_model(std::move(model));
-        set_year(year);
+        set_year((int) year);
     }
     // methods to set the values using getters and setters
     void set_make(std::string make);
@@ -28,7 +28,7 @@ public:
     void set_year(int year);
     std::string get_make();
     std::string get_model();
-    int get_year();
+    int get_year() const;
     // method to display the vehicle class info
     virtual void display_vehicle_info();
 
