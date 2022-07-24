@@ -23,7 +23,7 @@ double Truck::get_maximum_weight() const {
 
 // set up the display info method
 void Truck::display_vehicle_info() {
-    std::cout << "Vehicle Model: \t\t" << Vehicle::get_model() << std::endl;
+    std::cout << "Vehicle Model: \t\t\t" << Vehicle::get_model() << std::endl;
     std::cout << "Vehicle Cargo Size: \t" << Cargo_Size << " cu ft" << std::endl;
     std::cout << "Vehicle Maximum Weight: " << Maximum_Weight << " GVW" << std::endl;
 }
